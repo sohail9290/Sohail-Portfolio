@@ -1,4 +1,3 @@
-
 import { ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -24,10 +23,14 @@ const Hero = () => {
             <span className="text-portfolio-blue font-medium">Hello, I'm</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight">
               Sohail Khan Pattan
-              <span className="block text-portfolio-blue">Full-Stack Developer & Software Engineer</span>
+              <span className="block text-portfolio-blue">
+                Full-Stack Developer & Software Engineer
+              </span>
             </h1>
             <p className="text-lg text-slate-700 dark:text-slate-300 max-w-lg">
-              I specialize in building scalable, accessible, and secure web applications with a focus on clean design and robust development solutions.
+              I specialize in building scalable, accessible, and secure web
+              applications with a focus on clean design and robust development
+              solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
@@ -38,7 +41,11 @@ const Hero = () => {
                 View My Work
               </Button>
               <Button
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
                 variant="outline"
                 size="lg"
                 className="border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue/5"
@@ -51,7 +58,7 @@ const Hero = () => {
           <div className="hidden md:flex justify-center items-center">
             <Avatar className="w-80 h-80 border-4 border-white shadow-xl">
               <AvatarImage
-                src="src/components/DP.jpg"
+                src="https://raw.githubusercontent.com/sohail9290/Sohail-Portfolio/main/src/components/DP.jpg"
                 alt="Profile Picture"
                 className="object-cover w-full h-full"
               />
