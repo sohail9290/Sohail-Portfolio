@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -11,7 +10,6 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -27,8 +25,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-        ? "bg-white/80 dark:bg-portfolio-dark/80 backdrop-blur-sm shadow-sm py-4"
-        : "bg-transparent py-6"
+          ? "bg-white/80 dark:bg-portfolio-dark/80 backdrop-blur-sm shadow-sm py-4"
+          : "bg-transparent py-6"
         }`}
     >
       <div className="portfolio-container">
@@ -49,7 +47,12 @@ const Header = () => {
               </button>
             ))}
             <Button
-              onClick={() => window.open("src/components/Sohail_Resume.pdf", "Sohail Resume")}
+              onClick={() =>
+                window.open(
+                  "https://sohail9290.github.io/Sohail-Portfolio/src/components/Sohail_Resume.pdf",
+                  "_blank"
+                )
+              }
               className="bg-portfolio-blue hover:bg-portfolio-blue/80 text-white"
             >
               Resume
@@ -81,7 +84,12 @@ const Header = () => {
                 </button>
               ))}
               <Button
-                onClick={() => window.open("src\components\Sohail_Resume.pdf", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://sohail9290.github.io/Sohail-Portfolio/src/components/Sohail_Resume.pdf",
+                    "_blank"
+                  )
+                }
                 className="bg-portfolio-blue hover:bg-portfolio-blue/80 text-white w-full"
               >
                 Resume
