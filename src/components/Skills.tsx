@@ -98,7 +98,7 @@ const Skills = () => {
                 <div className="flex items-start justify-between">
                   <div>
                     <h4 className="font-bold text-lg">Master of Science in Computer Science</h4>
-                    <p className="text-slate-600 dark:text-slate-300">UNiversity of Alabama at Birmingham</p>
+                    <p className="text-slate-600 dark:text-slate-300">University of Alabama at Birmingham</p>
                   </div>
                   <span className="text-sm bg-blue-100 dark:bg-blue-900/30 text-portfolio-blue px-2 py-1 rounded">
                     Jan 2023 - Dec 2024
