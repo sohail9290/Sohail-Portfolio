@@ -6,7 +6,7 @@ const About = () => {
   const personalInfo = [
     { icon: User, label: "Name", value: "Sohail Khan Pattan" },
     { icon: Mail, label: "Email", value: "sohail.k9290@gmail.com" },
-    { icon: MapPin, label: "Location", value: "Birmingham, AL" },
+    { icon: MapPin, label: "Location", value: "San Jose, CA" },
     { icon: Calendar, label: "Experience", value: "2+ Years" },
   ];
 
