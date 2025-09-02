@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Birmingham, AL",
+      value: "San Jose, CA",
     },
   ];
 
